@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+}
+
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+ul li {
+    list-style:none;
+}
+ul::-webkit-scrollbar { width: 0 !important }
+
+/* 页面主体部分 */
+.content-box {
+    position: absolute;
+    left: 250px;      /* 控制左侧二级菜单栏的宽度 */
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding: 10px 20px;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #f0f0f0;
+}
+.content {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.content-collapse {
+    left: 65px;
+}
+.container {
+    padding: 20px;    /* 控制主体部分与主体边框的距离 */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin: 10px 0;
+}
+
+.el-table th {
+    background-color: #f5f7fa !important;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+/* 表格栏样式 */
+.table-container {
+    margin-top: 20px;
+}
+
+/* 分页栏样式 */
+.pagination-container {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 73%;
+
+}
+
+/* 测试主体页面的 div 样式 */
+.test-div{
+    margin: 15px;
+}
+
+
+/* DIY */
+.b-1-0 {border:1px solid #000; margin-top:10px}
+.b-br-1-EBEEF5 {border-bottom:1px solid #EBEEF5; border-right:1px solid #EBEEF5;}
+
+
+.b-b-1-EBEEF5 {border-bottom:1px solid #EBEEF5;}
+.b-l-1-EBEEF5 {border-left:1px solid #EBEEF5;}
+.b-t-1-EBEEF5 {border-top:1px solid #EBEEF5;}
+
+
+.text-r {text-align: right;}
+.text-c {text-align: center;}
+.text-l {text-align: left;}
+
+.m-t-8 {margin-top:8px}
+.m-t-10 {margin-top:10px}
+.m-t-20 {margin-top:20px}
+.m-t-50 {margin-top:50px}
+.m-t-n-5 {margin-top:-5px !important}
+.m-r-10 {margin-right:10px}
+.m-l-10 {margin-left:10px}
+.p-10 {padding:10px}
+.p-0-10 {padding:0 10px}
+
+.text-14 {font-size: 14px;}
+.text-20 {font-size: 20px;}
+.text-24 {font-size: 24px;}
+.float-l {float:left}
+.float-r {float:right}
+
+.w-100 {width:100% !important}
+.w-80 {width:80% !important}
+.w-70 {width:70% !important}
+
+.w-50 {width:50% !important}
+
+
+.w-input {width: 45% !important}
+.w-input-30 {width: 30% !important}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* 上传文件 */
+.avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
+
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+    border:1px dashed #666
+  }
+
+
+  /* 提交按钮 */
+.loginBtn {
+    cursor:pointer;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border-radius: 8px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    color:#fff;
+    text-align: center;
+}
+
+.btnDisable {
+    background-color:#BDBDBD;
+}
+.btnEnable {
+    background-color:#304AED;
+}
+
+
