@@ -7,11 +7,16 @@
             <p>PLAYS中控管理</p>
         </div> -->
         <div class="ms-login">
+            <img class="headpic" src="@/assets/img/publicPics/googleTitleBg.png" alt="">
             <div class="ms-title">
                 <p>
-                    <img src="@/assets/img/publicPics/logo.png" alt="">
+                    <img style="height:67px" src="@/assets/img/publicPics/logo.png" alt="">
                 </p>
-                <p>PLAYS中控管理</p>
+                <p class="ms-title-content" >
+                    <span class="left"></span>
+                    <span><b>白沙体育</b></span>
+                    <span class="right"></span>
+                </p>
             </div>
             <el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
                 <el-form-item prop="userName">
@@ -226,10 +231,9 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%; 
-    /* background-size:100% 100%; */
     background: url('../assets/img/publicPics/bg.png');
     background-repeat:no-repeat;
-    background-position: 0 -1px
+    background-position: 0 -180px
 }
 
 .top img {
@@ -249,38 +253,50 @@ export default {
 }
 
 
-
-
-
 .ms-title {
     width: 100%;
     text-align: center;
-    font-size: 16px;
-    font-weight: 600;
     margin: 25px 0px 15px;
 
 }
 .ms-title p {
     display: inline-block;
-    margin-right:10px;
+    width: 100%;
 }
 
-.ms-title img {
-    width:50px;
-    height:50px;
-    vertical-align: middle;
+.ms-title-content {
+    margin-top: 5px
+}
+
+.ms-title-content span {
+    display: inline-block;
+    width:20%;
+    height:5px;
+    font-size:13px;
+    margin:0 3px
 
 }
+.ms-title-content .left, .ms-title-content .right {
+    border-top: 1px solid #BABABA;
+    width: 14%;
+}
+
+
 .ms-login {
     position: relative;
     width: 450px;
-    height: 335px;
     max-width: 90%;
     margin: 250px auto;
-    border-radius: 5px;
+    border-radius: 7px;
     background: white;
     overflow: hidden;
 }
+
+.ms-login .headpic {
+    width:100%;
+    height:15px
+}
+
 .ms-content {
     padding: 30px 30px;
 }

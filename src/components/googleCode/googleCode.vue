@@ -3,7 +3,7 @@
         <el-dialog width="600px" :visible.sync="dialogFormVisible" :show-close="showClo" :close-on-click-modal="false" >
                 <div slot="title" class="title">
                     <img src="@/assets/img/publicPics/logo.png" alt="">
-                    <span><b>PLAYS中控管理</b> </span>
+                    <span><b>白沙体育</b> </span>
                 </div>
 
                 <div class="googleContent">Google安全码验证</div>
@@ -179,8 +179,7 @@ export default {
 }
 
 .title img {
-    width:30px;
-    height:30px;
+    height:40px;
     vertical-align: middle;
     margin-right:15px
 }
@@ -226,7 +225,6 @@ input::-webkit-inner-spin-button {
 
 /deep/ .el-dialog { 
     border-radius: 7px;
-    height:420px;
 }
 
 
