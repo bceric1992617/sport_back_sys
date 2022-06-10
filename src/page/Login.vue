@@ -231,15 +231,13 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%; 
-    background: url('../assets/img/publicPics/bg.png');
-    background-repeat:no-repeat;
-    background-position: 0 -180px
+    background-size: 100% 100% !important;
+    background: url('../assets/img/publicPics/bg.png') no-repeat 0 0;
 }
 
 .top img {
     width:60px;
     height:60px;
-    
 }
 
 .top p {
